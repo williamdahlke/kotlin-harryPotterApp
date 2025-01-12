@@ -17,4 +17,12 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+    /*val retrofit = Retrofit.Builder()
+        .baseUrl("https://viacep.com.br/")
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+
+    viaCepApi = retrofit.create(ViaCepApi::class.java)*/
+
 }

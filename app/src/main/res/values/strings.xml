@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">HarryPotterApp</string>
+    <string name="btnCharacterById">Character by ID</string>
+    <string name="btnStaff">Hogwarts Staff</string>]
+    <string name="btnCharactersHouse">Characters in a house</string>
+    <string name="btnExit">Exit</string>
 </resources>
