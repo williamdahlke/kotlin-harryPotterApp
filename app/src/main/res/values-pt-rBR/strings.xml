@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">HarryPotterApp</string>
+    <string name="app_name">Harry Potter App</string>
     <string name="btnCharacterById">Personagem por ID</string>
     <string name="btnStaff">Professores</string>
     <string name="btnCharactersHouse">Estudantes por casa</string>
     <string name="btnExit">Sair</string>
-
+    <string name="tvTitleCharacter">Personagem</string>
 </resources>
