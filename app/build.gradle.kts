@@ -48,4 +48,5 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.material.v190)
+    implementation(libs.picasso)
 }

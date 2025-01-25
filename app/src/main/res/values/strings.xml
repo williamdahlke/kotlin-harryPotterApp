@@ -5,4 +5,7 @@
     <string name="btnCharactersHouse">Characters in a house</string>
     <string name="btnExit">Exit</string>
     <string name="tvTitleCharacter">Character</string>
+    <string name="btnSearch">Search</string>
+    <string name="tvSearchById">ID:</string>
+    <string name="errorMessageGetCharacterById">Error to get the character from API</string>
 </resources>

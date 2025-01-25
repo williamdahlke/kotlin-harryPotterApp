@@ -6,4 +6,7 @@
     <string name="btnCharactersHouse">Estudantes por casa</string>
     <string name="btnExit">Sair</string>
     <string name="tvTitleCharacter">Personagem</string>
+    <string name="btnSearch">Buscar</string>
+    <string name="tvSearchById">ID:</string>
+    <string name="errorMessageGetCharacterById">Não foi possível encontrar este personagem</string>
 </resources>
