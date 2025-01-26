@@ -9,4 +9,6 @@
     <string name="btnSearch">Buscar</string>
     <string name="tvSearchById">ID:</string>
     <string name="errorMessageGetCharacterById">Não foi possível encontrar este personagem</string>
+    <string name="lblCharacterName">Name:</string>
+    <string name="lblHouseName">House:</string>
 </resources>

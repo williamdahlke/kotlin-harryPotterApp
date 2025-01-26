@@ -80,9 +80,17 @@ class ListarPersonagemActivity : AppCompatActivity() {
                     Toast.makeText(this@ListarPersonagemActivity, R.string.errorMessageGetCharacterById, Toast.LENGTH_SHORT).show()
                 } else{
                     val characterResponse = response.first()
-                    tvCharacterName.text = characterResponse.name
-                    tvCharacterHouse.text = characterResponse.house
-                    Picasso.get().load(characterResponse.image).into(imgViewCharacter)
+                    tvCharacterName.text = buildString {
+                        append(getString(R.string.lblCharacterName))
+                        append(" ")
+                        append(characterResponse.name)
+                    }
+                    tvCharacterHouse.text = buildString {
+                        append(getString(R.string.lblHouseName))
+                        append(" ")
+                        append(characterResponse.house)
+                    }
+                    Picasso.get().load(characterResponse.image).resize(800,800).into(imgViewCharacter)
                 }
             } catch (ex: Exception){
                 Log.e(this@ListarPersonagemActivity.toString(), "Error", ex)
