@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnStaff.setOnClickListener {
-            val intent = Intent(this, ListarProfessorEscolaActivity::class.java)
+            val intent = Intent(this, ListarProfessorActivity::class.java)
             startActivity(intent)
         }
 

@@ -11,4 +11,6 @@
     <string name="errorMessageGetCharacterById">Não foi possível encontrar este personagem</string>
     <string name="lblCharacterName">Name:</string>
     <string name="lblHouseName">House:</string>
+    <string name="tvTitleStaff">Professor</string>
+    <string name="errorMessageGetStaff">Não foi possível encontrar professores</string>
 </resources>

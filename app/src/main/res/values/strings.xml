@@ -10,4 +10,6 @@
     <string name="errorMessageGetCharacterById">Error to get the character from API</string>
     <string name="lblCharacterName">Name:</string>
     <string name="lblHouseName">House:</string>
+    <string name="tvTitleStaff">Staff</string>
+    <string name="errorMessageGetStaff">Error to get the staff from API</string>
 </resources>

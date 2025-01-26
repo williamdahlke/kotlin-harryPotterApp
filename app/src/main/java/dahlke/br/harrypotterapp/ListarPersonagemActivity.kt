@@ -77,7 +77,7 @@ class ListarPersonagemActivity : AppCompatActivity() {
                     harryPotterAPI.getCharacterById(id)
                 }
                 if (response.isEmpty()){
-                    Toast.makeText(this@ListarPersonagemActivity, R.string.errorMessageGetCharacterById, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ListarPersonagemActivity, R.string.errorMessageGetStaff, Toast.LENGTH_SHORT).show()
                 } else{
                     val characterResponse = response.first()
                     tvCharacterName.text = buildString {
@@ -90,7 +90,12 @@ class ListarPersonagemActivity : AppCompatActivity() {
                         append(" ")
                         append(characterResponse.house)
                     }
-                    Picasso.get().load(characterResponse.image).resize(800,800).into(imgViewCharacter)
+                    if (characterResponse.image.isNotEmpty()){
+                        Picasso.get().load(characterResponse.image).resize(800,800).into(imgViewCharacter)
+                    } else{
+                        Picasso.get().load(R.drawable.no_image).resize(800,800).into(imgViewCharacter)
+                    }
+
                 }
             } catch (ex: Exception){
                 Log.e(this@ListarPersonagemActivity.toString(), "Error", ex)
