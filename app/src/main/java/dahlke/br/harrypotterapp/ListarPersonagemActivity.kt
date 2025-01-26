@@ -77,7 +77,7 @@ class ListarPersonagemActivity : AppCompatActivity() {
                     harryPotterAPI.getCharacterById(id)
                 }
                 if (response.isEmpty()){
-                    Toast.makeText(this@ListarPersonagemActivity, R.string.errorMessageGetStaff, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ListarPersonagemActivity, R.string.errorMessageGetCharacterById, Toast.LENGTH_SHORT).show()
                 } else{
                     val characterResponse = response.first()
                     tvCharacterName.text = buildString {
