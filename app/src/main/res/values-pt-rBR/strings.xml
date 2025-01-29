@@ -13,4 +13,5 @@
     <string name="lblHouseName">House:</string>
     <string name="tvTitleStaff">Professor</string>
     <string name="errorMessageGetStaff">Não foi possível encontrar professores</string>
+    <string name="tvTitleStudentsByHouse">Estudantes por casa</string>
 </resources>

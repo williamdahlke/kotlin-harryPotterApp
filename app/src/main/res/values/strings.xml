@@ -12,4 +12,5 @@
     <string name="lblHouseName">House:</string>
     <string name="tvTitleStaff">Staff</string>
     <string name="errorMessageGetStaff">Error to get the staff from API</string>
+    <string name="tvTitleStudentsByHouse">Students By House</string>
 </resources>
