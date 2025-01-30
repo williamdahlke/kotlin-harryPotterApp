@@ -9,11 +9,10 @@
     tools:context=".ListarEstudantesCasaActivity">
 
     <TextView
-        android:id="@+id/tvTitleChar"
+        android:id="@+id/tvTitleStudentsByHouse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/tvTitleStudentsByHouse"
         android:textColor="#C08806"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitleChar"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleStudentsByHouse"
         app:layout_constraintVertical_bias="0.205"
         tools:listitem="@layout/list_item_imagem_texto" />
 

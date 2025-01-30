@@ -13,5 +13,6 @@
     <string name="tvTitleStaff">Staff</string>
     <string name="errorMessageGetStaff">Error to get the staff from API</string>
     <string name="tvTitleStudentsByHouse">Students By House</string>
+    <string name="tvTitleStudentsDetailByHouse">Students - </string>
     <string name="errorMessageGetStudentsByHouse">Error to get students by house from API</string>
 </resources>

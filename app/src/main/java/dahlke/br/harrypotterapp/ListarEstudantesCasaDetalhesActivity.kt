@@ -3,6 +3,7 @@ package dahlke.br.harrypotterapp
 import StudentsHouseImageTextArrayAdapter
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,7 @@ class ListarEstudantesCasaDetalhesActivity : AppCompatActivity() {
 
     private lateinit var harryPotterAPI: HarryPotterAPI
     private lateinit var recyclerViewStudents : RecyclerView
+    private lateinit var tvTitle : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,11 +36,18 @@ class ListarEstudantesCasaDetalhesActivity : AppCompatActivity() {
         }
 
         recyclerViewStudents = findViewById(R.id.recyclerViewStudents)
+        tvTitle = findViewById(R.id.tvTitleStudentsByHouse)
 
         val house = intent.extras?.getString("HOUSE") ?: ""
 
         if (house.isEmpty()){
             Toast.makeText(this, getString(R.string.errorMessageGetStudentsByHouse),Toast.LENGTH_SHORT).show()
+        }
+
+        tvTitle.text = buildString {
+            append(getString(R.string.tvTitleStudentsDetailByHouse))
+            append(" ")
+            append(house.uppercase())
         }
 
         val retrofit = Retrofit.Builder()

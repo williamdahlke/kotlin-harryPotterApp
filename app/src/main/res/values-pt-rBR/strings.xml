@@ -14,5 +14,6 @@
     <string name="tvTitleStaff">Professor</string>
     <string name="errorMessageGetStaff">Não foi possível encontrar professores</string>
     <string name="tvTitleStudentsByHouse">Estudantes por casa</string>
+    <string name="tvTitleStudentsDetailByHouse">Estudantes - </string>
     <string name="errorMessageGetStudentsByHouse">Não foi possível encontrar estudantes por casa</string>
 </resources>
