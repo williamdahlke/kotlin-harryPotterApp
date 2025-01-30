@@ -54,7 +54,7 @@ class ListarProfessorActivity : AppCompatActivity() {
                 if (response.isEmpty()){
                     Toast.makeText(this@ListarProfessorActivity, R.string.errorMessageGetCharacterById, Toast.LENGTH_SHORT).show()
                 } else{
-                    recyclerViewStaff?.adapter = ImageTextArrayAdapter(response, this@ListarProfessorActivity)
+                    recyclerViewStaff?.adapter = StaffImageTextArrayAdapter(response, this@ListarProfessorActivity)
                     recyclerViewStaff?.layoutManager = LinearLayoutManager(this@ListarProfessorActivity)
                     recyclerViewStaff?.setHasFixedSize(true)
                     recyclerViewStaff?.addItemDecoration(

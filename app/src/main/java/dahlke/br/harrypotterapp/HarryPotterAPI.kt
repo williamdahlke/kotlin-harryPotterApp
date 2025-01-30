@@ -9,4 +9,7 @@ interface HarryPotterAPI {
 
     @GET("characters/staff")
     suspend fun getStaff() : List<StaffResponse>
+
+    @GET("characters/house/{houseName}")
+    suspend fun getStudentsByHouse(@Path("houseName") houseName : String) : List<CharacterResponse>
 }

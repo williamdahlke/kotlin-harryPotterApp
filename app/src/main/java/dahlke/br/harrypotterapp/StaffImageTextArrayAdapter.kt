@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
-class ImageTextArrayAdapter(private val items: List<StaffResponse>, private val context: Context) : RecyclerView.Adapter<ImageTextArrayAdapter.StaffViewHolder>()
+class StaffImageTextArrayAdapter(private val items: List<StaffResponse>, private val context: Context) : RecyclerView.Adapter<StaffImageTextArrayAdapter.StaffViewHolder>()
 {
         inner class StaffViewHolder (itemView : View) : RecyclerView.ViewHolder(itemView){
             val staffImage = itemView.findViewById<ImageView>(R.id.item_image)
